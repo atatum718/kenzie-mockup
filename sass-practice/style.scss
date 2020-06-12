@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+Body {
+  font-family: "nunito", "sans-serif";
+}
+.nav_header-links {
+  display: flex;
+  list-style: none;
+  .blue-button {
+    color: white;
+    background-color: blue;
+    border-radius: 6px;
+    padding: 0.2em;
+    display: inline-block;
+    text-align: center;
+  }
+  padding: 5px;
+  .links {
+    margin: 4px;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+.hero-header {
+  text-align: center;
+  h1 {
+    color: rgb(163, 35, 125);
+  }
+  h2 {
+    margin: 10px;
+    font-size: medium;
+    font-weight: 100;
+  }
+}
+
+.signup-form {
+  text-align: center;
+  margin: 1.5em;
+  form {
+    margin: 2em;
+  }
+  input {
+    margin: 0.2em;
+  }
+  input[type="submit"] {
+    background-color: blue;
+    color: white;
+    // display: inline-block;
+    border-radius: 6px;
+    padding: 8px;
+    width: 50%;
+    margin: 10px;
+  }
+}
