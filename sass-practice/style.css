@@ -58,7 +58,7 @@ Body {
 }
 
 .signup-form input {
-  margin: 0.2em;
+  margin: 0.3em;
 }
 
 .signup-form input[type="submit"] {
@@ -67,6 +67,110 @@ Body {
   border-radius: 6px;
   padding: 8px;
   width: 50%;
-  margin: 10px;
+  margin: 15px;
+}
+
+.quote-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.quote-card .card-1 {
+  padding-bottom: 3em;
+}
+
+.calendar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calendar a {
+  text-decoration: none;
+  border: solid #a087e5 0.1em;
+  border-radius: 0.2em;
+  padding: 1em;
+  width: 100%;
+  text-align: center;
+}
+
+.calendar-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 35px;
+  padding-top: 10px;
+}
+
+.call-to-action {
+  background-color: #dadde2;
+  text-align: center;
+  padding: 15px;
+}
+
+.call-to-action .blue-button {
+  color: white;
+  background-color: blue;
+  border-radius: 3px;
+  padding: 0.2em;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "main" "team" "board" "mentors" "advisors" "students";
+  height: 100vh;
+  margin: 2em;
+}
+
+.main {
+  grid-row-start: 2;
+  grid-row-end: 5;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: main;
+}
+
+.team {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: team;
+}
+
+.board {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: board;
+}
+
+.mentors {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: mentors;
+}
+
+.advisors {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: advisors;
 }
 /*# sourceMappingURL=style.css.map */

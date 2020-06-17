@@ -46,7 +46,7 @@ Body {
     margin: 2em;
   }
   input {
-    margin: 0.2em;
+    margin: 0.3em;
   }
   input[type="submit"] {
     background-color: blue;
@@ -55,6 +55,87 @@ Body {
     border-radius: 6px;
     padding: 8px;
     width: 50%;
-    margin: 10px;
+    margin: 15px;
   }
+}
+.quote-card {
+  display: flex;
+  flex-direction: column;
+  .card-1 {
+    padding-bottom: 3em;
+  }
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: space-evenly;
+  // align-items: center;
+  a {
+    text-decoration: none;
+    border: solid rgb(160, 135, 229) 0.1em;
+    border-radius: 0.2em;
+    padding: 1em;
+    width: 100%;
+    // margin: 5px;
+    text-align: center;
+  }
+}
+.calendar-card {
+  display: flex;
+  flex-direction: column;
+  margin: 35px;
+  padding-top: 10px;
+}
+
+.call-to-action {
+  background-color: rgb(218, 221, 226);
+  text-align: center;
+  padding: 15px;
+  .blue-button {
+    color: white;
+    background-color: blue;
+    border-radius: 3px;
+    padding: 0.2em;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+  }
+}
+.grid-container {
+  display: grid;
+  // grid-template-columns: 1fr;
+  // grid-template-rows: 20px 20px 20px;
+  grid-template-areas:
+    "main"
+    "team"
+    "board"
+    "mentors"
+    "advisors"
+    "students";
+  height: 100vh;
+  margin: 2em;
+}
+
+.main {
+  grid-row-start: 2;
+  grid-row-end: 5;
+  grid-area: main;
+}
+
+.team {
+  grid-area: team;
+}
+
+.board {
+  grid-area: board;
+}
+
+.mentors {
+  grid-area: mentors;
+}
+
+.advisors {
+  grid-area: advisors;
 }
