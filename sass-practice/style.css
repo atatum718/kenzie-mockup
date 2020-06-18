@@ -9,6 +9,10 @@ Body {
   font-family: "nunito", "sans-serif";
 }
 
+img {
+  width: 100%;
+}
+
 .nav_header-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -84,19 +88,6 @@ Body {
   padding-bottom: 3em;
 }
 
-.calendar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .calendar a {
   text-decoration: none;
   border: solid #a087e5 0.1em;
@@ -134,43 +125,83 @@ Body {
   text-decoration: none;
 }
 
-.grid-container {
+.icon-wrapper {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "main" "team" "board" "mentors" "advisors" "students";
-  height: 100vh;
-  margin: 2em;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
 }
 
-.main {
-  grid-row-start: 2;
-  grid-row-end: 5;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: main;
+.icon-wrapper h3 {
+  text-align: center;
 }
 
-.team {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: team;
+.icon-wrapper .team {
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
-.board {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: board;
+.icon-wrapper .board {
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
-.mentors {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: mentors;
+.icon-wrapper .mentors {
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
-.advisors {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  grid-area: advisors;
+.icon-wrapper .advisors {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.video-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-self: center;
+  text-align: center;
+}
+
+@media (min-width: 550px) {
+  iframe {
+    width: 100%;
+    height: 300px;
+  }
+  .calendar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .icon-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .icon-wrapper h3 {
+    text-align: center;
+  }
+  .icon-wrapper .team {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .icon-wrapper .board {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .icon-wrapper .mentors {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .icon-wrapper .advisors {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
