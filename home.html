@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./sass-practice/style.css" />
+    <link rel="stylesheet" href="style2.css"/>
     <link
     rel="stylesheet"
     href="//fonts.googleapis.com/css?family=Nunito"
@@ -13,6 +13,7 @@
   <script src="https://kit.fontawesome.com/25a1297017.js" crossorigin="anonymous"></script>
   </head>
     <body>
+      <!-- Header Section -->
       <header class="nav_header">
         <nav>
             <ul class="nav_header-links">
@@ -20,46 +21,26 @@
               <li><a href="#" class="links">Programs</a></li>
               <li><a href="#" class="links">Pricing</a></li>
               <li><a class="blue-button" href="#">Schedule a Tour</a></li>
-            </ul>
           </nav>
       </header>
+      <!-- Hero Section -->
       <section class="hero">
         <div class="hero-header">
           <h1>Design your tech career</h1>
-          <h2>
+          <h3>
             Kenzie Academy is a two-year learning track and apprenticeship
             program.
-          </h2>
+          </h3>
         </div>
           <iframe
-            width="300"
-            height="215"
             src="https://www.youtube.com/embed/FqVHe2BGdEw"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
       </section>
-      
-      <section class="signup-form">
-        <h3>Let's Chat.</h3>
-          <p>
-            Kenzie Academy is no small commitment. If we've piqued your interest
-            today, we'd love to keep the conversation going.
-          </p>
-      
-          <form>
-            <div class="form-info">
-              <input placeholder="First Name" />
-              <input placeholder="Last Name" />
-              <input placeholder="Email" />
-              <input placeholder="Phone" />
-            <div>
-              <input type="submit" />
-            </div>
-          </form>
-        </section>
-
+     
+        <!-- Quotes Section -->
         <section class="quote-card">
           <div class="card-1"> 
             <p>
@@ -79,10 +60,10 @@
             </p>
           </div>
         </section>
-
+        <!-- Calendar Section -->
         <section class="calendar">
           <div class="calendar-card"> 
-            <img src="Kenzie Site.png" alt="calendar">
+            <img class="calendar-icon" src="calender-icon.png">
             <p>
               Software Engineering
             </p>
@@ -90,7 +71,7 @@
           </div>
 
           <div class="calendar-card"> 
-            <img src="Kenzie Site.png" alt="calendar">
+            <img class="calendar-icon" src="calender-icon.png" alt="calendar">
             <p>
               User Experience
             </p>
@@ -98,21 +79,23 @@
           </div>
 
           <div class="calendar-card"> 
-              <img src="Kenzie Site.png" alt="calendar">
+              <img class="calendar-icon" src="calender-icon.png" alt="calendar">
                 <p>
                  Digital Marketing
                 </p>
                 <a class="outlined-button" href="digital marketing">Digital Marketing</a>
             </div>
         </section>
-
+        <!-- Call to action Section -->
         <section class="call-to-action">
           <p>
             Not sure which program is right for you?
           </p>
-          <a class="blue-button" href="#">Compare Programs</a>
+          <div class="call-to-action-button">
+            <a href="#">Compare Programs</a>
+          </div>
         </section>
-
+        <!-- Teams Section -->
         <section class="grid-container">
           <div class="main">
             <h1>
@@ -154,6 +137,25 @@
         </p>
 
       </div>
+        </section>
+         <!-- Signup Section -->
+      <section class="signup-form">
+        <h3>Let's Chat.</h3>
+          <p>
+            Kenzie Academy is no small commitment. If we've piqued your interest
+            today, we'd love to keep the conversation going.
+          </p>
+      
+          <form>
+            <div class="form-info">
+              <input placeholder="First Name" />
+              <input placeholder="Last Name" />
+              <input placeholder="Email" />
+              <input placeholder="Phone" />
+            <div>
+              <input type="submit" />
+            </div>
+          </form>
         </section>
     </body>
   </html>
